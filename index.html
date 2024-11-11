@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Personal</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <script src="script.js"></script>
+
+    <!--link boxs icon-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--link css-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <header>
+        <h2 class="logo"><span>Arufi</span>Okey</h2>
+        <a href="#" class="tombol-download">Hello</a>
+    </header>
+    <section class="home">
+        <div class="content">
+            <h2>Hi, I'm<span>Alkahfi Rizky</span></h2>
+            <h4>Frontend Developer</h4>
+            <p>Front-end developer adalah pekerjaan pemrograman yang berfokus pada elemen visual website atau aplikasi yang akan berinteraksi dengan user</p>
+            <div class="grup-tombol">
+                <a href="#" class="button" onclick="openAbout()">About Me</a>
+                <a href="#" class="button" onclick="openGame()">My Game</a>
+            </div>
+            <div class="sosmed">
+                <a href="#" id="instagram-link">
+                    <i class='bx bxl-instagram-alt' ></i>
+                <a href="#"><i class='bx bxl-gmail'></i></a>
+                <a href="#" id="tiktok-link">
+                    <i class='bx bxl-tiktok'></i>
+            </div>
+            <div class="content 2">
+                <h2></h2>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.getElementById('tiktok-link').addEventListener('click', function() {
+            // Ganti "USERNAME" dengan nama pengguna TikTok yang ingin Anda tuju
+            var tiktokProfileUrl = "https://www.tiktok.com/@arufi_20?is_from_webapp=1&sender_device=pc";
+            
+            // Buka aplikasi TikTok jika tersedia, jika tidak, buka tautan TikTok di browser
+            if (window.location.href.includes('http')) {
+                window.open(tiktokProfileUrl, '_blank');
+            } else {
+                window.location.href = tiktokProfileUrl;
+            }
+        });
+    </script>
+    <script>
+        document.getElementById('instagram-link').addEventListener('click', function() {
+            // Ganti "USERNAME" dengan nama pengguna Instagram yang ingin Anda tuju
+            var instagramProfileUrl = "https://www.instagram.com/alkahfi_110?igsh=dGUxenV6bmZ4b2xr";
+            
+            // Buka aplikasi Instagram jika tersedia, jika tidak, buka tautan Instagram di browser
+            if (window.location.href.includes('http')) {
+                window.open(instagramProfileUrl, '_blank');
+            } else {
+                window.location.href = instagramProfileUrl;
+            }
+        });
+        function openGame() {
+            window.location.href = 'https://prinzaruhas.github.io/Alfster/'; // Ganti URL dengan halaman "My Game" yang diinginkan
+        }
+    </script>
+</body>
+</html>
